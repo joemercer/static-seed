@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Seed App</title>
+
+    <title>jomrcr</title>
+    <meta name="description" content="Joe Mercer: Living in NYC. Working at Noom. School at the University of Waterloo. From Redmond. Tweet @jomrcr. Made by @jomrcr."/>
+    <link rel="author" content="Joe Mercer" href="https://twitter.com/jomrcr"/>
 
     <link href="fonts/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
@@ -20,21 +23,22 @@
   <body>
 
     <header id="header">
-      <div class="header-color-block yellow"></div>
-      <div class="header-color-block amber"></div>
-      <div class="header-color-block orange"></div>
-      <div class="header-color-block sunset"></div>
-      <div class="header-color-block red"></div>
-      <div class="header-color-block fuchsia"></div>
-      <div class="header-color-block purple"></div>
-      <div class="header-color-block indigo"></div>
-      <div class="header-color-block blue"></div>
-      <div class="header-color-block aqua"></div>
-      <div class="header-color-block green"></div>
-      <div class="header-color-block lime"></div>
-      <div class="header-space">
-        <a class="hover-link"><i class="fa fa-twitter"></i></a>
-        <a class="hover-link"><i class="fa fa-github"></i></a>
+      <div class="trim-color-block yellow-back"></div>
+      <div class="trim-color-block amber-back"></div>
+      <div class="trim-color-block orange-back"></div>
+      <div class="trim-color-block sunset-back"></div>
+      <div class="trim-color-block red-back"></div>
+      <div class="trim-color-block fuchsia-back"></div>
+      <div class="trim-color-block purple-back"></div>
+      <div class="trim-color-block indigo-back"></div>
+      <div class="trim-color-block blue-back"></div>
+      <div class="trim-color-block aqua-back"></div>
+      <div class="trim-color-block green-back"></div>
+      <div class="trim-color-block lime-back"></div>
+      <div class="header container">
+        <a class="hover-link"><img src="fonts/logo.png" class="header-icon-image"/></a>
+        <a href="https://github.com/joemercer" target="_blank" class="hover-link"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/jomrcr" target="_blank" class="hover-link"><i class="fa fa-twitter"></i></a>
       </div>
     </header>
 
@@ -42,36 +46,42 @@
 
       <section id="intro">
 
-        <div id="intro-title" class="row">
+        <div id="intro-title">
           <div class="golden-col-md-narrow">
-            <img src="./img/joe.jpg" class="intro-img img-hover img-circle img-responsive center-block">
+            <img src="img/jomrcr.jpg" class="intro-img hover-img img-circle img-responsive center-block">
           </div>
           <div class="golden-col-md-wide text-center">
-            <h1 class="intro-title-header"><a class="hover-link">@jomrcr</a></h1>
+            <h1 class="intro-title-header"><a href="https://twitter.com/jomrcr" target="_blank" class="hover-link">@jomrcr</a></h1>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div id="intro-summary">
+          <div class="golden-content center-block">
+            <p>Hey folks, I'm Joe Mercer and I write code for <a href="http://www.noom.com/" target="_blank" class="hover-link">Noom</a> in NYC. Previously I worked at <a href="http://about.tagged.com/" target="_blank" class="hover-link">Tagged</a> in San Francisco and <a href="http://www.bazaarvoice.com/" target="_blank" class="hover-link">Bazaarvoice</a> in Austin. I also study math at the <a href="https://uwaterloo.ca/about/" target="_blank" class="hover-link">University of Waterloo</a> in Canada. I grew up in Redmond, near Seattle. I love meeting new people. Say <a href="mailto:jomrcr@gmail.com?Subject=Hello!" target="_top" class="hover-link">hello</a>!</p>
           </div>
         </div>
 
-        <div id="intro-summary" class="row">
-          <div class="golden-content center-block">
-            <p>Hey folks, I'm Joe Mercer and I write code for <a class="hover-link">Noom</a> in NYC. Previously I worked at <a class="hover-link">Tagged</a> in San Francisco and <a class="hover-link">Bazaarvoice</a> in Austin. I also study math at the <a class="hover-link">University of Waterloo</a> in Canada. I grew up in Redmond, near Seattle. <a class="hover-link">Give me a hollar</a> - I love meeting new people!</p>
+        <nav class="nav-container">
+          <div class="nav-inner-container">
+            <ul class="nav hide">
+              <li class="nav-item">
+                <a class="">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="">Posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="">Pics</a>
+              </li>
+            </ul>
+            <i class="fa fa-plus nav-icon toggle-nav"></i>
           </div>
+        </nav>
+        <div class="nav-fixed-buffer hide">
         </div>
 
       </section>
-
-      <nav id="nav" class="nav-container">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="hover-link">Twitter</a>
-          </li>
-          <li class="nav-item">
-            <a class="hover-link">Github</a>
-          </li>
-          <li class="nav-item">
-            <a class="hover-link">Email</a>
-          </li>
-        </ul>
-      </nav>
 
       <section id="projects" class="row">
         <div class="golden-col-md-narrow text-center">
@@ -81,9 +91,13 @@
           
             <p><a class="hover-link">Golden</a> - An open source CSS framework based on the Golden Ratio</p>
           
-            <p><a class="hover-link">Waitless</a> - A food ordering system built with Meteor.js</p>
+            <p><a class="hover-link">Stachetag</a> - Hacking with the Twitter API to produce new types of tags</p>
           
             <p><a class="hover-link">Tic Tac Code!</a> - Play Tic Tac Toe at 1000 moves a second by writing scripts</p>
+          
+            <p><a class="hover-link">Waitless</a> - A food ordering system built with Meteor.js</p>
+          
+            <p><a class="hover-link">iClickr</a> - Ask and answer multiple choice questions in realtime</p>
           
         </div>
       </section>
@@ -93,19 +107,7 @@
           <h2>Posts</h2>
         </div>
         <div class="golden-col-md-wide golden-col-md-narrow-pull">
-          <div class="golden-col-md-narrow text-center">
-            <p>~2014~</p>
-          </div>
-          <div class="golden-col-md-wide">
-            <p><a>Groups vs Teams</a> <small>#code #ideas #awesome</small></p>
-            <p><a>The Galaxy - Close but Yet So Far</a> <small>#rambling #chill</small></p>
-          </div>
-          <div class="golden-col-md-narrow text-center">
-            <p>~2013~</p>
-          </div>
-          <div class="golden-col-md-wide">
-            <p><a>What? A bear!</a></p>
-          </div>
+          <p class="text-center" style="font-size:1.8rem;">Coming soon!</p>
         </div>
       </section>
 
@@ -114,14 +116,18 @@
           <h2>Pics</h2>
         </div>
         <div class="golden-col-md-wide">
-          <p><img src="http://placehold.it/400x400" class="center-block"/></p>
-          <p><img src="http://placehold.it/400x400" class="center-block"/></p>
-          <p><img src="http://placehold.it/400x400" class="center-block"/></p>
-          <p><img src="http://placehold.it/400x400" class="center-block"/></p>
+          <p class="text-center" style="font-size:1.8rem;">Coming soon!</p>
         </div>
       </section>
 
     </div>
+
+    <footer id="footer">
+      <div class="footer container text-right">
+        <span>Made by <a href="https://twitter.com/jomrcr" target="_blank" class="hover-link">@jomrcr</a> in NYC</span>
+        <a class="hover-link"><img src="fonts/logo.png" class="footer-icon-image"/></a>
+      </div>
+    </footer>
 
     <script type="text/javascript" src="js/main.js"></script>
   </body>
