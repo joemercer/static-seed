@@ -36,9 +36,11 @@
       <div class="trim-color-block green-back"></div>
       <div class="trim-color-block lime-back"></div>
       <div class="header container">
-        <a class="hover-link"><img src="fonts/logo.png" class="header-icon-image"/></a>
-        <a href="https://github.com/joemercer" target="_blank" class="hover-link"><i class="fa fa-github"></i></a>
-        <a href="https://twitter.com/jomrcr" target="_blank" class="hover-link"><i class="fa fa-twitter"></i></a>
+        <div class="header-inner">
+          <a class="hover-img"><img src="fonts/logo.png" class="header-icon-image"/></a>
+          <a href="https://github.com/joemercer" target="_blank" class="hover-link"><i class="fa fa-github"></i></a>
+          <a href="https://twitter.com/jomrcr" target="_blank" class="hover-link"><i class="fa fa-twitter"></i></a>
+        </div>
       </div>
     </header>
 
@@ -64,18 +66,23 @@
 
         <nav class="nav-container">
           <div class="nav-inner-container">
-            <ul class="nav hide">
-              <li class="nav-item">
-                <a class="">Projects</a>
+            <div class="header-cover header-inner hide">
+              <a href="http://www.joemercer.com/" target="_blank" class="hover-link"><img src="fonts/logo.png" class="header-icon-image"/></a>
+              <a href="https://github.com/joemercer" target="_blank" class="hover-link"><i class="fa fa-github"></i></a>
+              <a href="https://twitter.com/jomrcr" target="_blank" class="hover-link"><i class="fa fa-twitter"></i></a>
+            </div>
+            <ul class="nav hover-nav-item hide">
+              <li class="nav-item opacity-hide nav-item-transition-1">
+                <a class="scroll-to" data-scroll-target="#projects">Projects</a>
               </li>
-              <li class="nav-item">
-                <a class="">Posts</a>
+              <li class="nav-item opacity-hide nav-item-transition-2">
+                <a class="scroll-to" data-scroll-target="#posts">Posts</a>
               </li>
-              <li class="nav-item">
-                <a class="">Pics</a>
+              <li class="nav-item opacity-hide nav-item-transition-3">
+                <a class="scroll-to" data-scroll-target="#pics">Pics</a>
               </li>
             </ul>
-            <i class="fa fa-plus nav-icon toggle-nav"></i>
+            <a><i class="fa fa-plus nav-icon toggle-nav rotate-effect"></i></a>
           </div>
         </nav>
         <div class="nav-fixed-buffer hide">
@@ -124,8 +131,8 @@
 
     <footer id="footer">
       <div class="footer container text-right">
-        <span>Made by <a href="https://twitter.com/jomrcr" target="_blank" class="hover-link">@jomrcr</a> in NYC</span>
-        <a class="hover-link"><img src="fonts/logo.png" class="footer-icon-image"/></a>
+        <span>Made by <a href="https://twitter.com/jomrcr" target="_blank">@jomrcr</a> in New York City</span>
+        <a><img src="fonts/logo.png" class="footer-icon-image scroll-to" data-scroll-target="#intro"/></a>
       </div>
     </footer>
 
