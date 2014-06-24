@@ -1,6 +1,8 @@
 # TODO
 ________
 
+- switch the purpose of data and client/data as in Noom-Data-Visualizations
+
 - instructions on removing the git remote after cloning
 
 - also edit the TODO file (split it into sections, make it nice looking, etc)
